@@ -47,7 +47,11 @@ export const App: React.FC = () => {
       >
         Load red goods
       </button>
-      {errorMessage === '' ? <GoodsList goods={goods} /> : <div>{errorMessage}</div>}
+      {errorMessage === '' ? (
+        <GoodsList goods={goods} />
+      ) : (
+        <div>{errorMessage}</div>
+      )}
     </div>
   );
 };
